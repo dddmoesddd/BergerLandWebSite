@@ -1,0 +1,145 @@
+.footer {
+  grid-area: footer;
+  height: 400px;
+  background: #ed1f13;
+  background: linear-gradient(
+    to right,
+    #ed1f13 0%,
+    #824102 25%,
+    #fac506 75%,
+    #ed0f0f 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-top: 50px;
+}
+
+.footercontent {
+  height: 80%;
+  width: 35%;
+  margin: 0px;
+
+  margin-bottom: 20px;
+}
+.footercontent .social {
+  display: flex;
+  justify-content: center;
+}
+
+.footer > .footercontent:not(:first-child) {
+  border-right: 2px groove white;
+}
+
+.footercontent iframe {
+  width: 98%; /* iframe fills container width */
+  height: 80%; /* iframe fills container height */
+  border: 0;
+  /* remove border */
+}
+
+.footer .map i {
+  font-size: 30px;
+  color: rgb(248, 248, 248);
+}
+
+.address {
+  font-size: 20px;
+  color: rgb(10, 10, 10);
+  word-wrap: break-word;
+  font-weight: 200;
+  margin-bottom: 7px;
+}
+.menu-circle {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.center {
+  position: absolute;
+  top: 42%;
+  left: 38%;
+  width: 180px;
+  height: 180px;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: rgb(71, 221, 71);
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+.menu-circle:hover .center {
+  background: #824102;
+}
+
+.item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  margin-left: -28px;
+  margin-top: -11px;
+  background: rgb(238, 24, 24);
+  border-radius: 50%;
+  color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  pointer-events: none;
+  font-size: 15px;
+}
+
+.menu-circle:hover .item {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* diagonal cross positions */
+.menu-circle:hover .item1 {
+  transform: translate(100px, -100px);
+  /* Northeast */
+}
+
+.menu-circle:hover .item2 {
+  transform: translate(-100px, -100px);
+  /* Northwest */
+}
+
+.menu-circle:hover .item3 {
+  transform: translate(100px, 100px);
+  /* Southeast */
+}
+
+.menu-circle:hover .item4 {
+  transform: translate(-100px, 100px);
+  /* Southwest */
+}
+
+.footer .branches ul {
+  list-style: none;
+}
+
+.footer .branches ul li {
+  font-size: 20px;
+}
+
+.branches ul {
+  text-align: right;
+}
+
+.footer .branches ul li i {
+  color: rgb(250, 250, 0);
+}

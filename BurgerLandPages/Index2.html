@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+.imagegallerycontainer
+{
+
+width: 600px;
+height: 600px;
+display: grid;
+grid-template-rows:20% 20% 20% ;
+grid-template-columns: 1fr 1fr 1fr;
+column-gap: 3px;
+row-gap: 3px;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+}
+
+.div
+{
+
+    background-color: gold;
+
+}
+
+
+img{
+
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    transition: all 2s ease;
+
+}
+
+img:hover{
+
+
+
+    transform: scale(1.8);
+    transition: all 2s ease;
+
+}
+</style>
+<body>
+    
+ 
+    <div class="imagegallerycontainer">
+
+<div class="div">     
+    <img src="/BurgerLandImages/HeaderImages/burgerHeader.png"/></div>
+<div class="div">    
+    <img src="/BurgerLandImages/HeaderImages/burgerHeader.png"/></div>
+<div class="div">    
+    <img src="/BurgerLandImages/HeaderImages/burgerHeader.png"/></div>
+<div class="div">    
+    <img src="/BurgerLandImages/HeaderImages/burgerHeader.png"/></div>
+<div class="div">    
+    <img src="/BurgerLandImages/HeaderImages/burgerHeader.png"/></div>
+<div class="div">    
+    <img src="/BurgerLandImages/HeaderImages/burgerHeader.png"/></div>
+<div class="div">    
+    <img src="/BurgerLandImages/HeaderImages/burgerHeader.png"/></div>
+<div class="div">    
+    <img src="/BurgerLandImages/HeaderImages/burgerHeader.png"/></div>
+<div class="div">    
+    <img src="/BurgerLandImages/HeaderImages/burgerHeader.png"/></div>
+
+    </div>
+</body>
+</html>

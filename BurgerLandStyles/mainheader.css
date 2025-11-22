@@ -1,0 +1,124 @@
+.mainheader {
+  grid-area: mainheader;
+  background-color: #fac506;
+  position: relative;
+}
+
+header {
+  height: 100%;
+}
+
+.headerImageContainer {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.headerImage {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  object-fit: cover;
+}
+
+.headermenulist {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.headermenulist li {
+  display: inline-block;
+  padding: 2px;
+  color: #fac506;
+  font-size: 20px;
+}
+
+.headermenu {
+  top: 5px;
+  left: 10px;
+  width: 67%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: nowrap;
+  align-content: center;
+
+  position: absolute;
+  font-size: 30px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.9px);
+  -webkit-backdrop-filter: blur(1.9px);
+}
+.headermenu .headermenulist a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+
+  display: inline-block;
+}
+
+.headermenu .headermenulist a:hover {
+  color: green;
+}
+
+.headerTitle {
+  position: absolute;
+
+  top: 35%;
+  left: 35%;
+  transform: translate(-50px, -50px);
+  font-size: 45px;
+  font-family: headertext;
+  margin: 0;
+  background: #fac506;
+  background: linear-gradient(
+    to left,
+    #fac506 30%,
+    #3fff3f 25%,
+    #ff260e 50%,
+    #5b4216 75%,
+    #5b4216 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.headertextDetail {
+  position: absolute;
+  top: 65%;
+  left: 18%;
+  transform: translate(-50px, -50px);
+  font-size: 20px;
+  font-family: headertext;
+
+  margin: 0;
+  background: #daf012;
+  background: linear-gradient(
+    to right,
+    #fac506 0%,
+    #8c3310 50%,
+    #752201 51%,
+    #bf2000 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: headerdetailfont;
+}
+.headertextDetail h2 {
+  font-weight: 500px;
+}
+
+@font-face {
+  font-family: headerdetailfont;
+  src: url("/BurgerLandFonts/HeaderFont/W_parvaz.woff") format("woff");
+}
+@font-face {
+  font-family: headertext;
+  src: url("/BurgerLandFonts/HeaderFont/Lalezar-Regular.woff") format("woff");
+}

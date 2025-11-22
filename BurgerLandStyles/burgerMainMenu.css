@@ -1,0 +1,89 @@
+.burgerMainMenue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background: #fbff28;
+  background: linear-gradient(
+    to right,
+    #fac506 0%,
+    #ff1313 30%,
+    #fac506 60%,
+    #824102 100%
+  );
+  height: 100px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.burgerMainMenue ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.burgerMainMenue ul > li {
+  position: relative;
+}
+.burgerMainMenue ul > li > a {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+  color: whitesmoke;
+  transition: all 2s ease;
+  color: rgb(255, 255, 255);
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2),
+    1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.burgerMainMenue ul > li > a:hover {
+  color: green;
+  transition: all 0.5s ease;
+}
+
+.burgerMainMenue ul > li {
+  display: inline-block;
+  border-left: 3px groove whitesmoke;
+}
+
+.burgerMainMenue ul > li > ul > li {
+  display: block;
+  margin-bottom: 3px;
+  background-color: lightgray;
+  width: 100%;
+}
+
+.burgerMainMenue ul > li > ul > li > a {
+  color: black;
+}
+
+.burgerMainMenue ul > li > ul {
+  position: absolute;
+  width: 300px;
+  left: -349%;
+  top: 71px;
+  background-color: whitesmoke;
+  text-align: right;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+.burgerMainMenue ul > li > ul > li > ul {
+  position: absolute;
+  width: 300px;
+  left: -100%;
+  top: -1px;
+  background-color: whitesmoke;
+  text-align: right;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+.burgerMainMenue ul > li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s linear;
+}

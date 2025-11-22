@@ -1,0 +1,53 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url("/BurgerLandImages/BackGroundSite/background.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: lighten;
+  background-attachment: fixed;
+  z-index: -1;
+  font-family: burgerfont;
+  direction: rtl;
+}
+
+.maincontent {
+  width: 100%;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: 57vh 32vh auto auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "mainheader"
+    "menu"
+    "main"
+    "footer";
+
+  /* background-color: red; */
+}
+
+.mainsection {
+  grid-area: main;
+}
+.mainfooter {
+  grid-area: footer;
+}
+
+.circlemenu {
+  position: sticky;
+  top: 0;
+  z-index: 111;
+  grid-area: menu;
+}
+
+.mainheader {
+  grid-area: mainheader;
+}
+
+@font-face {
+  font-family: burgerfont;
+  src: url("/BurgerLandFonts/Yekan.woff");
+}
