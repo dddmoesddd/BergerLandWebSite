@@ -1,10 +1,10 @@
+/* MAIN MENU BAR */
 .burgerMainMenue {
-  direction: rtl;
+  direction: rtl; /* important for Persian */
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  background: #fbff28;
   background: linear-gradient(
     to right,
     #fac506 0%,
@@ -27,72 +27,69 @@
 .burgerMainMenue ul > li {
   position: relative;
   display: inline-block;
-  border-left: 3px groove whitesmoke;
-  transition: all 0.5s ease;
+  border-right: 3px groove whitesmoke; /* RTL: use right border */
 }
-.burgerMainMenue ul > li > a {
-  /* display: block;
-  text-decoration: none;
-  padding: 5px;
-  color: whitesmoke;
 
-  color: rgb(255, 255, 255);
-  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2),
-    1px 1px 1px rgba(0, 0, 0, 0.6); */
+/* LINKS */
+.burgerMainMenue ul > li > a {
   display: block;
-  padding: 10px;
+  padding: 5px 20px;
   text-decoration: none;
   color: white;
   text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2),
     1px 1px 1px rgba(0, 0, 0, 0.6);
   transition: color 0.3s;
-  /* transition: all 2s ease; */
 }
 
 .burgerMainMenue ul > li > a:hover {
   color: green;
-  transition: all 0.5s ease;
 }
 
+/* FIRST-LEVEL SUBMENU (opens BELOW) */
 .burgerMainMenue ul > li > ul {
   position: absolute;
-  width: 300px;
-  right: 0px;
-  top: 71px;
-  background-color: whitesmoke;
-  text-align: right;
+  top: 100%;
+  right: 0; /* RTL: align submenu to right edge */
+  width: 250px;
+  background: whitesmoke;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.5s linear;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
   text-align: right; /* RTL text alignment */
-}
-
-.burgerMainMenue ul > li > ul > li {
-  position: relative;
-  display: block;
-  margin-bottom: 3px;
-  background-color: lightgray;
-  width: 100%;
 }
 
 .burgerMainMenue ul > li:hover > ul {
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.5s linear;
+}
+
+/* SUBMENU ITEMS */
+.burgerMainMenue ul > li > ul > li {
+  display: block;
+  background: lightgray;
+  margin: 0;
 }
 
 .burgerMainMenue ul > li > ul > li > a {
   color: black;
+  padding: 10px 15px;
 }
 
+/* SECOND-LEVEL SUBMENU (opens to the LEFT) */
 .burgerMainMenue ul > li > ul > li > ul {
   position: absolute;
-  width: 300px;
-  right: 100%;
-  top: -1px;
-  background-color: whitesmoke;
-  text-align: right;
+  top: 0;
+  right: 100%; /* RTL: open submenu to the LEFT */
+  width: 250px;
+  background: whitesmoke;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.5s linear;
+  transition: opacity 0.3s ease;
+  text-align: right;
+}
+
+.burgerMainMenue ul > li > ul > li:hover > ul {
+  visibility: visible;
+  opacity: 1;
 }
