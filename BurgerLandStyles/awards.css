@@ -12,6 +12,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-attachment: fixed;
 }
 
 img.zarin {
@@ -31,7 +32,29 @@ img.zarin {
   font-weight: 400;
 }
 
-.divawards figcaption {
+.content figcaption {
   background-color: rgb(243, 229, 36);
   margin-bottom: 4px;
+}
+
+.hero-section {
+  width: 85%;
+  height: 350px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  background-image: url("/BurgerLandImages/Awards/awards.jpg");
+  background-size: 100% 100%;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* 🔥 makes image fixed only here */
+  background-blend-mode: lighten;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  color: white;
+  font-size: 24px;
 }
