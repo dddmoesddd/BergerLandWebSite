@@ -64,7 +64,7 @@ header {
 }
 
 .headermenu .headermenulist a:hover {
-  color: green;
+  color: rgb(104, 228, 104);
 }
 
 .headerTitle {
@@ -79,11 +79,12 @@ header {
   background: #fac506;
   background: linear-gradient(
     to left,
+    #5b4216 5%,
     #fac506 30%,
     #3fff3f 25%,
     #ff260e 50%,
     #5b4216 75%,
-    #5b4216 100%
+    #eeedec 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -104,7 +105,7 @@ header {
     #fac506 0%,
     #8c3310 50%,
     #752201 51%,
-    #bf2000 100%
+    #e0dddd 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
