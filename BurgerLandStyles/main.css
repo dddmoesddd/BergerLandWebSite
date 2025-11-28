@@ -15,17 +15,19 @@ body {
 }
 
 .maincontent {
+  margin: 0;
+  padding: 0;
   width: 100%;
   min-height: 100dvh;
   display: grid;
-  grid-template-rows: 57vh 32vh auto auto;
+  grid-template-rows: 57dvh 32dvh auto auto;
   grid-template-columns: 1fr;
   grid-template-areas:
     "mainheader"
     "menu"
     "main"
     "footer";
-
+  overflow-x: hidden;
   /* background-color: red; */
 }
 
